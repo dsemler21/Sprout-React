@@ -16,7 +16,7 @@ export default class Reminder extends React.Component {
         return (
             <ReminderContainer>
                 <ReminderText>
-                    Water Juliana
+                    Water {this.props.name}
                 </ReminderText>
             </ReminderContainer>
         );
