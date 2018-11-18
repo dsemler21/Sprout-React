@@ -55,20 +55,3 @@ export default class App extends React.Component {
     this.setState({ isLoadingComplete: true });
   };
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-  },
-
-  tabsStyle: {
-    tabBarShowLabels: 'hidden',
-    tabBarButtonColor: '#999',
-    tabBarSelectedButtonColor: '#000',
-  },
-
-  navigationOptions: {
-    fontFamily: 'SF-Pro-Display-Bold'
-  }
-});
