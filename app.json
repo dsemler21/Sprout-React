@@ -3,7 +3,7 @@
     "name": "Sprout",
     "description": "Plant managing app",
     "slug": "Sprout",
-    "privacy": "private",
+    "privacy": "unlisted",
     "sdkVersion": "31.0.0",
     "platforms": [
       "ios",
