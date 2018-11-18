@@ -1,6 +1,12 @@
 import React from 'react';
-import { ScrollView, StyleSheet } from 'react-native';
+import { View } from 'react-native';
+import styled from 'styled-components';
 
+const AddView = styled(View)`
+    flex: 1;
+    padding-top: 15px;
+    background-color: #fff;
+`;
 
 export default class AddScreen extends React.Component {
   static navigationOptions = {
@@ -16,16 +22,7 @@ export default class AddScreen extends React.Component {
 
   render() {
     return (
-      <View style={styles.container}>
-      </View>
+      <AddView />
     );
   }
 }
-
-styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    paddingTop: 15,
-    backgroundColor: '#fff',
-  },
-});

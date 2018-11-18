@@ -1,6 +1,5 @@
 import React from 'react';
-import { ExpoConfigView } from '@expo/samples';
-
+import { View, StyleSheet, Text } from 'react-native';
 
 export default class SettingsScreen extends React.Component {
   static navigationOptions = {
@@ -15,8 +14,24 @@ export default class SettingsScreen extends React.Component {
   };
 
   render() {
-    /* Go ahead and delete ExpoConfigView and replace it with your
-     * content, we just wanted to give you a quick view of your config */
-    return <ExpoConfigView />;
+    return (
+      <View style={styles.container}>
+        <Text style={styles.date}>
+          Thursday
+        </Text>
+      </View>
+    );
   }
 }
+
+
+styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    paddingTop: 15,
+    backgroundColor: '#fff',
+  },
+  contentContainer: {
+    paddingTop: 30,
+  },
+});

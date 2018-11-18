@@ -3,13 +3,13 @@ import { Platform } from 'react-native';
 import { createStackNavigator, createBottomTabNavigator } from 'react-navigation';
 
 import TabBarIcon from '../components/TabBarIcon';
-import HomeScreen from '../screens/HomeScreen';
+import ScheduleScreen from '../screens/ScheduleScreen';
 import AddScreen from '../screens/AddScreen';
 import OverviewScreen from '../screens/OverviewScreen';
-import { black } from 'ansi-colors';
+
 
 const HomeStack = createStackNavigator({
-  Home: HomeScreen,
+  Home: ScheduleScreen,
 });
 
 HomeStack.navigationOptions = {
@@ -54,13 +54,13 @@ export default createBottomTabNavigator({
   HomeStack,
   LinksStack,
   SettingsStack,
-}, 
+},
 
-{
-  tabBarOptions: {
-    showLabel: false,
-    style: {
-      backgroundColor: '#EBF0F5',
+  {
+    tabBarOptions: {
+      showLabel: false,
+      style: {
+        backgroundColor: '#EBF0F5',
+      }
     }
-  }
-});
+  });
